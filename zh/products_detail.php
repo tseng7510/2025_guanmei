@@ -78,9 +78,9 @@
                   </div>
                 </div>
                 <div class="bottomBox fadeInUp" data-wow-delay="0.6s">
-                  <div class="listBox">
+                  <div class="listBox popup-gallery">
                     <? for ($i = 0; $i < 9; $i++) { ?>
-                      <div class="item popup-gallery">
+                      <div class="item">
                         <a href="../images/index/c_1.jpg">
                           <div class="pic"><img src="../images/index/c_1.jpg" alt=""></div>
                         </a>

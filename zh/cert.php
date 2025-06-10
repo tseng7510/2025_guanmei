@@ -58,9 +58,9 @@
           <div class="container">
             <div class="contentBox">
               <section class="wow fadeInUp" data-wow-delay="0.4s">
-                <div class="listBox">
+                <div class="listBox popup-gallery">
                   <? for ($i = 0; $i < 8; $i++) { ?>
-                    <div class="item popup-gallery">
+                    <div class="item">
                       <a href="../images/in/cert2.jpg">
                         <div class="picBox">
                           <div class="pic"><img src="../images/in/cert.jpg" alt=""></div>

@@ -66,9 +66,9 @@
 
                   本案充分體現冠美在金屬門設計與施工上的靈活應變與高度配合度。無論是設計美感、空間整合或安全性能，我們都致力於提供善的解決方案。</div>
 
-                <div class="listBox wow fadeInUp" data-wow-delay="0.6s">
+                <div class="listBox popup-gallery wow fadeInUp" data-wow-delay="0.6s">
                   <? for ($i = 0; $i < 9; $i++) { ?>
-                    <div class="item popup-gallery">
+                    <div class="item">
                       <a href="../images/index/c_1.jpg">
                         <div class="pic"><img src="../images/index/c_1.jpg" alt=""></div>
                       </a>
