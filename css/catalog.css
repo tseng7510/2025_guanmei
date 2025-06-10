@@ -1,0 +1,329 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.catalogPage .mainBox {
+  background: linear-gradient(to bottom, #f4f4f4 0%, rgba(244, 244, 244, 0) 100%);
+  padding-top: 3.5%;
+}
+@media screen and (max-width: 1024px) {
+  .catalogPage .mainBox {
+    padding-top: 50px;
+  }
+}
+.catalogPage .mainBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  position: relative;
+  isolation: isolate;
+  border-right: #D1CAC3 1px solid;
+}
+@media screen and (max-width: 550px) {
+  .catalogPage .mainBox .listBox {
+    flex-direction: column;
+    border: none;
+    gap: 30px;
+  }
+}
+.catalogPage .mainBox .listBox .item {
+  width: calc((100% - 0px * (3 - 1)) / 3);
+  padding: 0 20px 40px;
+  border-left: #D1CAC3 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media screen and (max-width: 550px) {
+  .catalogPage .mainBox .listBox .item {
+    border: none;
+    width: 100%;
+  }
+}
+.catalogPage .mainBox .listBox .item a.online {
+  color: #D0A986;
+  border: 1px solid #D0A986;
+  padding: 8px 30px 2px;
+  font-size: 15px;
+  font-weight: 300;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  isolation: isolate;
+}
+@media screen and (max-width: 767px) {
+  .catalogPage .mainBox .listBox .item a.online {
+    font-size: 13px;
+    padding: 10px 25px 6px;
+    line-height: 1;
+  }
+}
+.catalogPage .mainBox .listBox .item a.online::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+  background: #D0A986;
+  transition: all 0.3s ease 0s;
+}
+.catalogPage .mainBox .listBox .item a.online:hover {
+  color: #FFF;
+}
+.catalogPage .mainBox .listBox .item a.online:hover::before {
+  width: 100%;
+  left: 0;
+}
+.catalogPage .mainBox .listBox .item .title {
+  font-size: var(--clamp20);
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.catalogPage .mainBox .listBox .item .pic img {
+  aspect-ratio: 400/566;
+  transition: all 1s ease 0s;
+}
+
+.mfp-iframe-holder .mfp-content {
+  max-width: 95vw;
+  min-height: calc(95vh - 40px);
+}
+
+.catalogOnlinePage {
+  padding: 0 !important;
+  font-size: 1.25rem;
+}
+.catalogOnlinePage .siteHeader {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .siteHeader {
+    gap: 10px;
+  }
+}
+.catalogOnlinePage .siteHeader .logo_catalog {
+  height: 40px;
+  aspect-ratio: 246/59;
+  line-height: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  box-sizing: content-box;
+  transition: all 0.3s ease 0s;
+  z-index: 5;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .siteHeader .logo_catalog {
+    height: 30px;
+    display: none;
+  }
+}
+.catalogOnlinePage .siteHeader .logo_catalog a {
+  display: block;
+}
+.catalogOnlinePage .siteHeader .logo_catalog img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+}
+.catalogOnlinePage .siteHeader .back {
+  min-width: 165px;
+  height: 40px;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #D0A986;
+  font-size: var(--clamp18);
+  font-weight: 400;
+  line-height: 1.4;
+  transition: all 0.3s ease 0s;
+  isolation: isolate;
+  position: relative;
+  padding: 10px 30px 5px;
+  isolation: isolate;
+  border: #D0A986 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .siteHeader .back {
+    height: 30px;
+    min-width: 80px;
+    font-size: 13px;
+    padding: 5px 10px 0;
+  }
+}
+.catalogOnlinePage .siteHeader .back::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+  background: #D0A986;
+  transition: all 0.3s ease 0s;
+}
+.catalogOnlinePage .siteHeader .back:hover {
+  color: #fff;
+}
+.catalogOnlinePage .siteHeader .back:hover::after {
+  width: 100%;
+  left: 0;
+}
+.catalogOnlinePage .mainBox {
+  padding-bottom: 0 !important;
+}
+.catalogOnlinePage #holder {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.catalogOnlinePage img {
+  max-width: 100%;
+}
+.catalogOnlinePage .btnBox {
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .btnBox {
+    position: relative;
+    justify-content: flex-start;
+    transform: none;
+    left: auto;
+    gap: 5px;
+  }
+}
+.catalogOnlinePage .btnBox button {
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: #D0A986 1px solid;
+  color: #D0A986;
+  transition: all 0.3s ease 0s;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .btnBox button {
+    width: 30px;
+    height: 30px;
+  }
+}
+.catalogOnlinePage .btnBox button::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  background: #D0A986;
+  transition: all 0.3s ease 0s;
+}
+.catalogOnlinePage .btnBox button:hover {
+  background: #D0A986;
+}
+.catalogOnlinePage .btnBox button:hover::before {
+  background: #FFF;
+}
+.catalogOnlinePage .btnBox button.home::before {
+  -webkit-mask: url("../images/in/i_home.svg") center no-repeat;
+          mask: url("../images/in/i_home.svg") center no-repeat;
+}
+.catalogOnlinePage .btnBox button.prev::before {
+  -webkit-mask: url("../images/in/i_prev.svg") center no-repeat;
+          mask: url("../images/in/i_prev.svg") center no-repeat;
+}
+.catalogOnlinePage .btnBox button.next::before {
+  -webkit-mask: url("../images/in/i_next.svg") center no-repeat;
+          mask: url("../images/in/i_next.svg") center no-repeat;
+}
+.catalogOnlinePage .btnBox button.zoomIn::before {
+  -webkit-mask: url("../images/in/i_zoomin.svg") center no-repeat;
+          mask: url("../images/in/i_zoomin.svg") center no-repeat;
+}
+.catalogOnlinePage .btnBox button.zoomOut::before {
+  -webkit-mask: url("../images/in/i_zoomout.svg") center no-repeat;
+          mask: url("../images/in/i_zoomout.svg") center no-repeat;
+}
+.catalogOnlinePage .btnBox button.listBtn::before {
+  -webkit-mask: url("../images/in/i_list.svg") center no-repeat;
+          mask: url("../images/in/i_list.svg") center no-repeat;
+}
+.catalogOnlinePage .pageNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  color: #D0A986;
+  letter-spacing: 2px;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .pageNum {
+    gap: 5px;
+  }
+}
+.catalogOnlinePage .pageNum input {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: #D0A986 1px solid;
+  color: #D0A986;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .catalogOnlinePage .pageNum input {
+    width: 30px;
+    height: 30px;
+  }
+}
+.catalogOnlinePage .listBox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-content: center;
+  display: none;
+}
+.catalogOnlinePage .listBox.active {
+  display: flex;
+}
+.catalogOnlinePage #listUse {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.catalogOnlinePage #listUse .pic {
+  max-width: 200px;
+  cursor: pointer;
+}/*# sourceMappingURL=catalog.css.map */

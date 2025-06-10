@@ -1,0 +1,469 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.aboutPage {
+  position: relative;
+  isolation: isolate;
+}
+.aboutPage::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: url("../images/in/abg.jpg") top left no-repeat;
+  width: 58%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 1100px) {
+  .aboutPage::before {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage::before {
+    display: none;
+  }
+}
+.aboutPage .mainBox .block1 {
+  padding: 3% 0 5%;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block1 {
+    padding: 30px 0 50px;
+  }
+}
+.aboutPage .mainBox .block1 .contentBox {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto 8%;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block1 .contentBox {
+    flex-direction: column;
+  }
+}
+.aboutPage .mainBox .block1 .titleBox {
+  width: 45%;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block1 .titleBox {
+    width: 100%;
+  }
+}
+.aboutPage .mainBox .block1 .titleBox h1 {
+  font-size: var(--clamp50);
+  font-weight: 300;
+  color: #D0A986;
+  line-height: 1.4;
+}
+.aboutPage .mainBox .block1 .titleBox .slogan {
+  font-size: var(--clamp26);
+  color: #1F1F1F;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block1 .titleBox .slogan {
+    margin-bottom: 10px;
+  }
+}
+.aboutPage .mainBox .block1 .infoBox {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 7%;
+  font-size: var(--clamp18);
+  color: #777;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block1 .infoBox {
+    width: 100%;
+    padding-top: 3%;
+  }
+}
+.aboutPage .mainBox .block1 .infoBox .slogan {
+  font-size: var(--clamp20);
+  color: #1F1F1F;
+  font-weight: 500;
+}
+.aboutPage .mainBox .block1 .picBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block1 .picBox {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.aboutPage .mainBox .block1 .picBox .pic:last-child {
+  padding-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block1 .picBox .pic:last-child {
+    padding-top: 0;
+  }
+}
+.aboutPage .mainBox .block2 {
+  text-align: center;
+}
+.aboutPage .mainBox .block2 .contentBox {
+  border-bottom: #D1CAC3 1px solid;
+  padding-bottom: 8%;
+}
+.aboutPage .mainBox .block2 .slogan1 {
+  color: #1F1F1F;
+  font-size: var(--clamp26);
+  margin-bottom: 10px;
+}
+.aboutPage .mainBox .block2 .slogan2 {
+  color: #777777;
+  font-size: var(--clamp18);
+}
+.aboutPage .mainBox .block3 {
+  padding: 8% 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block3 {
+    padding: 50px 0 0;
+  }
+}
+.aboutPage .mainBox .block3 .contentBox {
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block3 .contentBox {
+    flex-direction: column;
+  }
+}
+.aboutPage .mainBox .block3 .contentBox > .pic {
+  width: 50%;
+  position: sticky;
+  top: 80px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block3 .contentBox > .pic {
+    position: relative;
+    top: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.aboutPage .mainBox .block3 .infoBox {
+  width: 50%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: var(--clamp18);
+  color: #777;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block3 .infoBox {
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block3 .infoBox {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.aboutPage .mainBox .block3 .infoBox .description {
+  max-width: 600px;
+  margin-bottom: 5%;
+}
+.aboutPage .mainBox .block3 .infoBox .slogan {
+  font-size: var(--clamp20);
+  color: #1F1F1F;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.aboutPage .mainBox .block3 .titleBox .en {
+  font-size: var(--clamp50);
+  font-weight: 300;
+  color: #D0A986;
+  line-height: 1.4;
+}
+.aboutPage .mainBox .block3 .titleBox .zh {
+  font-size: var(--clamp26);
+  color: #1F1F1F;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block3 .titleBox .zh {
+    margin-bottom: 10px;
+  }
+}
+.aboutPage .mainBox .block4 {
+  padding: 6% 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block4 {
+    padding: 50px 0 0;
+  }
+}
+.aboutPage .mainBox .block4 .contentBox {
+  max-width: 1400px;
+  margin: 0 auto;
+  border: #D1CAC3 1px solid;
+  padding: 5%;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block4 .contentBox {
+    padding: 30px;
+  }
+}
+.aboutPage .mainBox .block4 .slogan {
+  font-size: var(--clamp20);
+  color: #1F1F1F;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.aboutPage .mainBox .block4 ul.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutPage .mainBox .block4 ul.list li {
+  color: #777777;
+  position: relative;
+  padding-left: 25px;
+  font-size: var(--clamp18);
+}
+.aboutPage .mainBox .block4 ul.list li::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #D0A986;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.aboutPage .mainBox .block5 {
+  padding: 6% 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block5 {
+    padding: 50px 0 0;
+  }
+}
+.aboutPage .mainBox .block5 .slogan {
+  text-align: center;
+  font-size: var(--clamp26);
+  color: #1F1F1F;
+  line-height: 1.2;
+  margin-bottom: 6%;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block5 .slogan {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block5 .slogan {
+    margin-bottom: 50px;
+  }
+}
+.aboutPage .mainBox .block5 .listBox {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  isolation: isolate;
+}
+@media screen and (max-width: 550px) {
+  .aboutPage .mainBox .block5 .listBox {
+    gap: 50px;
+    flex-direction: column;
+  }
+}
+.aboutPage .mainBox .block5 .listBox .item {
+  width: calc((100% - 30px * (3 - 1)) / 3);
+}
+@media screen and (max-width: 550px) {
+  .aboutPage .mainBox .block5 .listBox .item {
+    width: 100%;
+  }
+}
+.aboutPage .mainBox .block5 .listBox .item a {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutPage .mainBox .block5 .listBox .item .picBox {
+  background: linear-gradient(to top, #cbcfd6 0%, rgba(203, 207, 214, 0) 50%);
+  padding: 0 10px 50px;
+  transition: all 0.3s ease 0s;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block5 .listBox .item .picBox {
+    padding: 0 10px 20px;
+  }
+}
+.aboutPage .mainBox .block5 .listBox .item .picBox img {
+  transition: all 1s ease 0s;
+}
+.aboutPage .mainBox .block5 .listBox .item .infoBox::after {
+  content: "VIEW MORE";
+  color: #999999;
+  font-size: 15px;
+  font-weight: 300;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto 0;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block5 .listBox .item .infoBox::after {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0px auto;
+  }
+}
+.aboutPage .mainBox .block5 .listBox .item .title {
+  color: #1F1F1F;
+  font-size: var(--clamp20);
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 20px;
+}
+.aboutPage .mainBox .block5 .listBox .item .pic {
+  margin: 0 auto;
+  max-width: 303px;
+}
+.aboutPage .mainBox .block6 {
+  padding: 6% 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block6 {
+    padding: 50px 0 0;
+  }
+}
+.aboutPage .mainBox .block6 .titleBox {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block6 .titleBox {
+    margin-bottom: 30px;
+  }
+}
+.aboutPage .mainBox .block6 .titleBox .title {
+  color: #1F1F1F;
+  font-weight: 400;
+  font-size: var(--clamp28);
+  position: relative;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+.aboutPage .mainBox .block6 .titleBox .title + .description {
+  max-width: 1290px;
+  margin-top: 80px;
+  color: #999999;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block6 .titleBox .title + .description {
+    margin-top: 40px;
+  }
+}
+.aboutPage .mainBox .block6 .titleBox .en {
+  color: #D0A986;
+  font-size: var(--clamp18);
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.aboutPage .mainBox .block6 .contentBox {
+  position: relative;
+  isolation: isolate;
+  padding: 6% 6% 0;
+}
+.aboutPage .mainBox .block6 .contentBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, #f4f4f4 0%, rgba(244, 244, 244, 0) 100%);
+  z-index: -1;
+}
+.aboutPage .mainBox .block6 .listBox {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block6 .listBox {
+    gap: 15px;
+  }
+}
+.aboutPage .mainBox .block6 .listBox .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc((100% - 50px * (4 - 1)) / 4);
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block6 .listBox .item {
+    width: calc((100% - 15px * (3 - 1)) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .mainBox .block6 .listBox .item {
+    width: calc((100% - 15px * (2 - 1)) / 2);
+  }
+}
+.aboutPage .mainBox .block6 .listBox .item .title {
+  text-align: center;
+  font-size: var(--clamp20);
+}
+.aboutPage .mainBox .block6 .listBox a {
+  aspect-ratio: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .mainBox .block6 .listBox a {
+    gap: 10px;
+  }
+}
+.aboutPage .mainBox .block6 .listBox a:hover .pic img {
+  transform: scale(1.1);
+}
+.aboutPage .mainBox .block6 .listBox .pic {
+  border: #D1CAC3 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+.aboutPage .mainBox .block6 .listBox .pic img {
+  max-width: 80%;
+  aspect-ratio: 1;
+  transition: all 1s ease 0s;
+}/*# sourceMappingURL=about.css.map */

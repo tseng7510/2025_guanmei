@@ -1,0 +1,304 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.application {
+  background: url("../images/in/banner_ap.jpg") top center no-repeat;
+  background-size: contain;
+}
+.application .listBox {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+@media screen and (max-width: 767px) {
+  .application .listBox {
+    gap: 80px;
+  }
+}
+.application .listBox .item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .application .listBox .item {
+    text-align: left;
+    max-width: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .application .listBox .item:nth-child(even) .pic {
+    order: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .application .listBox .item {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .application .listBox .item .pic,
+  .application .listBox .item .info {
+    width: calc((100% - 60px * (2 - 1)) / 2);
+  }
+}
+.application .listBox .item .title {
+  color: #7ECEF4;
+  font-size: var(--clamp54);
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.application .listBox .item .description {
+  font-size: var(--clamp18);
+  color: #545454;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .application .listBox .item .description {
+    margin-bottom: 30px;
+  }
+}
+.application .listBox .item .more {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 10px;
+  color: #7ECEF4;
+  background: #004387;
+  font-weight: 700;
+  overflow: hidden;
+  isolation: isolate;
+  position: relative;
+  border-radius: 50px;
+}
+@media screen and (max-width: 767px) {
+  .application .listBox .item .more {
+    margin: 0 auto;
+  }
+}
+.application .listBox .item .more::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background: #7ECEF4;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.application .listBox .item .more::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
+          mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
+  background: #7ECEF4;
+  transition: all 0.3s ease;
+}
+.application .listBox .item .more:hover {
+  color: #004387 !important;
+}
+.application .listBox .item .more:hover::before {
+  width: 100%;
+  left: 0;
+}
+.application .listBox .item .more:hover::after {
+  background: #004387 !important;
+}
+
+.applicationDetail {
+  background: url("../images/in/banner_ap.jpg") top center no-repeat;
+  background-size: contain;
+}
+.applicationDetail .topBox {
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  padding-bottom: 8%;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: 768px) {
+  .applicationDetail .topBox {
+    text-align: left;
+    max-width: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .topBox {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+.applicationDetail .topBox::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, #DDE0E7 0%, rgba(221, 224, 231, 0) 100%);
+  display: block;
+  bottom: 0;
+  top: 50%;
+  left: calc(var(--contentPadding) * -1);
+  right: calc(var(--contentPadding) * -1);
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .applicationDetail .topBox .pic,
+  .applicationDetail .topBox .info {
+    flex: 1 1 auto;
+  }
+}
+.applicationDetail .topBox .pic {
+  padding: 15px;
+  max-width: 630px;
+  filter: drop-shadow(0px 0px 15px rgba(0, 158, 224, 0.5));
+}
+.applicationDetail .topBox .info {
+  max-width: 720px;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .topBox .info {
+    max-width: none;
+    order: 2;
+  }
+}
+.applicationDetail .topBox .title {
+  color: #7ECEF4;
+  font-size: var(--clamp85);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.applicationDetail .topBox .description {
+  font-size: var(--clamp18);
+  color: #545454;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .topBox .description {
+    margin-bottom: 30px;
+  }
+}
+.applicationDetail .bottomBox .subTitle {
+  color: #7ECEF4;
+  font-size: var(--clamp54);
+  font-weight: 700;
+  margin-bottom: 5%;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .bottomBox .subTitle {
+    margin-bottom: 30px;
+  }
+}
+.applicationDetail .bottomBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px 40px;
+  margin-bottom: 15%;
+}
+@media screen and (max-width: 1024px) {
+  .applicationDetail .bottomBox .listBox {
+    gap: 30px 40px;
+  }
+}
+.applicationDetail .bottomBox .item {
+  padding: 0 30px;
+  width: calc((100% - 40px * (4 - 1)) / 4);
+}
+@media screen and (max-width: 1024px) {
+  .applicationDetail .bottomBox .item {
+    width: calc((100% - 40px * (1 - 1)) / 1);
+    padding: 0 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .bottomBox .item {
+    width: calc((100% - 40px * (2 - 1)) / 2);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .applicationDetail .bottomBox .item:nth-child(even) {
+    border-left: none;
+  }
+}
+.applicationDetail .bottomBox .item a:hover .pic {
+  filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.2));
+}
+.applicationDetail .bottomBox .item a:hover .pic img {
+  transform: scale(1.05);
+}
+.applicationDetail .bottomBox .item a:hover .more {
+  opacity: 1;
+}
+.applicationDetail .bottomBox .item .pic {
+  margin-bottom: 10px;
+  overflow: visible;
+}
+.applicationDetail .bottomBox .item .pic img {
+  max-width: 250px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  transition: all 0.3s ease;
+}
+.applicationDetail .bottomBox .item .title {
+  font-size: var(--clamp32);
+  line-height: 1.2;
+  color: #7ECEF4;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.applicationDetail .bottomBox .item .description {
+  color: #535353;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.applicationDetail .bottomBox .item .more {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #0075C2;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.applicationDetail .bottomBox .item .more::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
+          mask: url("../images/icon/icon_arrow_more.svg") center no-repeat;
+  background: #0075C2;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=application.css.map */

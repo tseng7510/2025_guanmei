@@ -1,0 +1,112 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.certPage .siteMain .mainBox .contentBox {
+  position: relative;
+}
+.certPage .siteMain .mainBox .contentBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, #f4f4f4 0%, rgba(244, 244, 244, 0) 100%);
+}
+.certPage .siteMain .mainBox .contentBox section {
+  padding: 6% 20px 0;
+  box-sizing: content-box;
+}
+.certPage .siteMain .listBox {
+  max-width: 1530px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 30px;
+  position: relative;
+  isolation: isolate;
+}
+@media screen and (max-width: 767px) {
+  .certPage .siteMain .listBox {
+    gap: 50px 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .certPage .siteMain .listBox {
+    flex-direction: column;
+  }
+}
+.certPage .siteMain .listBox .item {
+  width: calc((100% - 30px * (4 - 1)) / 4);
+}
+@media screen and (max-width: 1024px) {
+  .certPage .siteMain .listBox .item {
+    width: calc((100% - 30px * (3 - 1)) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .certPage .siteMain .listBox .item {
+    width: calc((100% - 20px * (2 - 1)) / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .certPage .siteMain .listBox .item {
+    width: 100%;
+  }
+}
+.certPage .siteMain .listBox .item a {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.certPage .siteMain .listBox .item a:hover .picBox {
+  background: linear-gradient(to top, #d0a986 0%, rgba(208, 169, 134, 0) 50%);
+}
+.certPage .siteMain .listBox .item a:hover .picBox img {
+  transform: scale(1.1);
+}
+.certPage .siteMain .listBox .item .picBox {
+  background: linear-gradient(to top, #cbcfd6 0%, rgba(203, 207, 214, 0) 50%);
+  padding: 0 10px 40px;
+  transition: all 0.3s ease 0s;
+}
+@media screen and (max-width: 1300px) {
+  .certPage .siteMain .listBox .item .picBox {
+    padding: 0 10px 20px;
+  }
+}
+.certPage .siteMain .listBox .item .picBox .pic {
+  margin: 0 auto;
+  max-width: 283px;
+}
+.certPage .siteMain .listBox .item .picBox .pic img {
+  aspect-ratio: 283/400;
+  transition: all 1s ease 0s;
+}
+.certPage .siteMain .listBox .item .infoBox::after {
+  content: "VIEW MORE";
+  color: #999999;
+  font-size: 15px;
+  font-weight: 300;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto 0;
+}
+@media screen and (max-width: 767px) {
+  .certPage .siteMain .listBox .item .infoBox::after {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0px auto;
+  }
+}
+.certPage .siteMain .listBox .item .title {
+  color: #1F1F1F;
+  font-size: var(--clamp20);
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}/*# sourceMappingURL=cert.css.map */

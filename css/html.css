@@ -1,0 +1,72 @@
+@charset "UTF-8";
+:root {
+  --RWDWidth: 1024px;
+}
+
+.htmlPage .blockTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .htmlPage .blockTitle {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .htmlPage .blockTitle {
+    font-size: 1.875rem;
+  }
+}
+.htmlPage .editor {
+  color: #999999;
+  font-size: var(--clamp21);
+  padding: 50px 70px;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .htmlPage .editor {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .htmlPage .editor {
+    padding: 0px;
+  }
+}
+.htmlPage .editor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: #3D3C3A 1px solid;
+  border-width: 1px 0 0 1px;
+  max-width: 695px;
+  max-height: 476px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-mask: linear-gradient(135deg, black 0%, rgba(0, 0, 0, 0) 100%);
+          mask: linear-gradient(135deg, black 0%, rgba(0, 0, 0, 0) 100%);
+  background: transparent;
+}
+@media screen and (max-width: 767px) {
+  .htmlPage .editor::before {
+    display: none;
+  }
+}
+.htmlPage .editor span.title {
+  color: #E66E0D;
+  font-weight: 700;
+}
+.htmlPage .editor ul.style li {
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+.htmlPage .editor ul.style li::before {
+  content: "◆";
+  color: #D0A986;
+  position: absolute;
+  left: 0;
+}/*# sourceMappingURL=html.css.map */
