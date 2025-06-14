@@ -60,11 +60,14 @@
               <section class="wow fadeInUp" data-wow-delay="0.4s">
                 <div class="listBox">
                   <? for ($i = 0; $i < 3; $i++) { ?>
-                  <div class="item">
-                    <div class="pic"><img src="../images/in/catalog.jpg" alt=""></div>
-                    <div class="title">2025冠美金屬型錄</div>
-                    <a href="catalog_detail.php" class="online">線上觀看</a>
-                  </div>
+                    <div class="item">
+                      <div class="pic"><img src="../images/in/catalog.jpg" alt=""></div>
+                      <div class="title">2025冠美金屬型錄</div>
+                      <div class="btnBox">
+                        <a href="catalog_detail.php">線上觀看</a>
+                        <a href="catalog_detail.php">下載</a>
+                      </div>
+                    </div>
                   <? } ?>
                 </div>
               </section>

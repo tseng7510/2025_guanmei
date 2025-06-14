@@ -58,15 +58,18 @@
           <div class="container">
             <div class="contentBox">
               <section class="wow fadeInUp" data-wow-delay="0.4s">
-                <div class="listBox popup-gallery">
+                <div class="listBox">
                   <? for ($i = 0; $i < 8; $i++) { ?>
-                    <div class="item">
-                      <a href="../images/in/cert2.jpg">
+                    <div class="item popup-gallery">
+                      <a href="../images/in/cert.jpg">
                         <div class="picBox">
                           <div class="pic"><img src="../images/in/cert.jpg" alt=""></div>
                         </div>
                         <div class="title">單開推拉防火證明</div>
                       </a>
+                      <!-- 其他照片依此方式放置 -->
+                      <a href="../images/in/cert2.jpg"></a>
+                      <!-- 其他照片依此方式放置 -->
                     </div>
                   <? } ?>
                 </div>
@@ -82,39 +85,41 @@
   <?php include('include_body_bottom.php'); ?>
   <script type="text/javascript">
     $(function() {
-      $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1]
-        },
-        closeOnBgClick: false,
-        callbacks: {
-          open: function() {
-            const _this = this;
-            const mfpContent = document.querySelector('.mfp-content');
-            const prevBtn = document.createElement('button');
-            const nextBtn = document.createElement('button');
-            prevBtn.className = 'mfp-arrow mfp-arrow-left';
-            nextBtn.className = 'mfp-arrow mfp-arrow-right';
-            prevBtn.setAttribute('type', 'button');
-            nextBtn.setAttribute('type', 'button');
-            mfpContent.appendChild(prevBtn);
-            mfpContent.appendChild(nextBtn);
-            prevBtn.addEventListener('click', (e) => {
-              e.preventDefault();
-              _this.prev();
-            })
-            nextBtn.addEventListener('click', (e) => {
-              e.preventDefault();
-              _this.next();
-            })
+      $('.popup-gallery').each(function() {
+        $(this).magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1]
           },
-        }
-      });
+          closeOnBgClick: false,
+          callbacks: {
+            open: function() {
+              const _this = this;
+              const mfpContent = document.querySelector('.mfp-content');
+              const prevBtn = document.createElement('button');
+              const nextBtn = document.createElement('button');
+              prevBtn.className = 'mfp-arrow mfp-arrow-left';
+              nextBtn.className = 'mfp-arrow mfp-arrow-right';
+              prevBtn.setAttribute('type', 'button');
+              nextBtn.setAttribute('type', 'button');
+              mfpContent.appendChild(prevBtn);
+              mfpContent.appendChild(nextBtn);
+              prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                _this.prev();
+              })
+              nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                _this.next();
+              })
+            },
+          }
+        });
+      })
     });
   </script>
 </body>

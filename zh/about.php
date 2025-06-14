@@ -11,7 +11,7 @@
 <body>
 
   <?php include('include_body_top.php'); ?>
-  <div class="wrapper insidePages aboutPage">
+  <div class="wrapper insidePages">
     <header class="siteHeader" itemscope="itemscope">
       <?php include('include_top.php'); ?>
     </header>
@@ -41,7 +41,7 @@
       </div>
 
 
-      <div class="mainBox">
+      <div class="mainBox aboutPage">
 
         <section>
           <div class="block block1">
