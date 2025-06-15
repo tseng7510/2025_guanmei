@@ -653,8 +653,8 @@ button:focus {
 }
 .pic img {
   width: 100% !important;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .mfp-bg {
