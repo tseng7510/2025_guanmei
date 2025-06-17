@@ -653,6 +653,7 @@ button:focus {
 }
 .pic img {
   width: 100% !important;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -744,9 +745,11 @@ button:focus {
   padding: 40px 50px;
   position: relative;
   display: block !important;
+  max-height: 80vh;
 }
 .mfp-zoom-out-cur .mfp-image-holder .mfp-content .mfp-figure {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 .mfp-zoom-out-cur .mfp-container > .mfp-arrow {
   display: none;
