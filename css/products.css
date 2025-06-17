@@ -79,6 +79,9 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.productsPage .mainBox .listBox .item .model {
+  text-align: center;
+}
 .productsPage .mainBox .listBox .item .pic img {
   aspect-ratio: 254/143;
   transition: all 1s ease 0s;

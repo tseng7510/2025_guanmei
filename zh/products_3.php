@@ -30,11 +30,15 @@
                   <meta itemprop="position" content="1">
                 </li>
                 <li itemprop="itemListElement" itemscope="" itemtype="//schema.org/ListItem">
-                  <span itemprop="name">產品介紹</span>
+                  <a href="products.php" itemprop="item">
+                    <span itemprop="name">產品介紹 </span>
+                  </a>
                   <meta itemprop="position" content="2">
                 </li>
                 <li itemprop="itemListElement" itemscope="" itemtype="//schema.org/ListItem">
-                  <span itemprop="name">水閘門</span>
+                  <a href="products_2.php" itemprop="item">
+                    <span itemprop="name">水閘門</span>
+                  </a>
                   <meta itemprop="position" content="3">
                 </li>
                 <li itemprop="itemListElement" itemscope="" itemtype="//schema.org/ListItem">
@@ -63,6 +67,7 @@
                           <div class="pic"><img src="../images/index/c_1.jpg" alt=""></div>
                           <div class="infoBox">
                             <h2 class="title">不銹鋼水閘門</h2>
+                            <div class="model">WT-001</div>
                           </div>
                         </a>
                       </div>
