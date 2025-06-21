@@ -201,8 +201,8 @@ function sliderDown(elem) {
   });
   $('.hasSide .sideBox li li').parent('ul').parent().addClass('nextLv');
   $('.hasSide .sideBox .nextLv').on('click', function (e) {
-    $(this).toggleClass('active');
     $(this).children('ul').slideToggle(200);
+    $(this).toggleClass('active');
     $(this).siblings().removeClass('active').find('ul').slideUp(200);
   });
 })();

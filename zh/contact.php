@@ -60,42 +60,42 @@
               <div class="contentBox">
                 <div class="topBox">
                   <div class="listBox">
-                    <div class="item wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.1s">
                       <div class="pic"><img src="../images/in/1.png" alt=""></div>
                       <div class="title">1. 備妥詢價資料</div>
                       <div class="info">案場照片、圖片資料<br />工程尺寸、公司名片</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.2s">
                       <div class="pic"><img src="../images/in/2.png" alt=""></div>
                       <div class="title">2. 諮詢業務取得報價</div>
                       <div class="info">討論五金<br />面料及動工日期</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="0.6s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.3s">
                       <div class="pic"><img src="../images/in/3.png" alt=""></div>
                       <div class="title">3. 簽定報價內容</div>
                       <div class="info">簽訂工程合約</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="0.8s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.4s">
                       <div class="pic"><img src="../images/in/4.png" alt=""></div>
                       <div class="title">4. 支付工程訂金</div>
                       <div class="info">30%用於訂製工料費</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="1.0s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.5s">
                       <div class="pic"><img src="../images/in/5.png" alt=""></div>
                       <div class="title">5. 工程現場丈量</div>
                       <div class="info">洽談工地施作介面<br />定案時寄尺寸</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="1.2s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.6s">
                       <div class="pic"><img src="../images/in/6.png" alt=""></div>
                       <div class="title">6. 備料製作</div>
                       <div class="info">特殊板材及尺寸<br />備料期長</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="1.4s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.7s">
                       <div class="pic"><img src="../images/in/7.png" alt=""></div>
                       <div class="title">7. 備妥詢價資料</div>
                       <div class="info">工期視數量<br />案場施工難易而定</div>
                     </div>
-                    <div class="item wow fadeInLeft" data-wow-delay="1.6s">
+                    <div class="item wow fadeInLeft" data-wow-delay="0.8s">
                       <div class="pic"><img src="../images/in/8.png" alt=""></div>
                       <div class="title">8. 付款尾款</div>
                       <div class="info">取得相關證明</div>
@@ -105,24 +105,25 @@
                 </div>
 
                 <div class="centerBox">
-
-                  <div class="pageTitleBox wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="pageTitleBox wow fadeInUp" data-wow-delay="1.0s">
                     <div class="title">工期概況</div>
                     <div class="en">Construction period</div>
                   </div>
-                  <div class="listBox">
-                    <div class="item">
-                      <div class="con">預約丈量約<span>1週</span></div>
+                  <div class="content">
+                    <div class="listBox">
+                      <div class="item">
+                        <div class="con">預約丈量約<span>1週</span></div>
+                      </div>
+                      <div class="item">
+                        <div class="con">丈量完成至開始安裝約<span>1.5個月</span></div>
+                      </div>
+                      <div class="item">
+                        <div class="con">安裝工期<span>依現場狀況及數量而定</span></div>
+                      </div>
                     </div>
-                    <div class="item">
-                      <div class="con">丈量完成至開始安裝約<span>1.5個月</span></div>
-                    </div>
-                    <div class="item">
-                      <div class="con">安裝工期<span>依現場狀況及數量而定</span></div>
-                    </div>
+                    <div class="notice">以上遇國定假日順延<br />
+                      視整體案量調整</div>
                   </div>
-                  <div class="notice">以上遇國定假日順延<br />
-                    視整體案量調整</div>
                 </div>
 
                 <div class="bottomBox">

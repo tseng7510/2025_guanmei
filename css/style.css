@@ -717,6 +717,7 @@ button:focus {
 .mfp-zoom-out-cur .mfp-img {
   padding-top: 0;
   padding-bottom: 0;
+  max-height: 80vh !important;
 }
 .mfp-zoom-out-cur .mfp-counter {
   display: none;
@@ -745,7 +746,6 @@ button:focus {
   padding: 40px 50px;
   position: relative;
   display: block !important;
-  max-height: 80vh;
 }
 .mfp-zoom-out-cur .mfp-image-holder .mfp-content .mfp-figure {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -2026,6 +2026,9 @@ button:focus {
   color: #fff;
   background: #d0a986;
 }
+.hasSide .sideBox ul li.active > ul {
+  display: block;
+}
 .hasSide .sideBox ul li.active > a::before,
 .hasSide .sideBox ul li.active > button::before {
   color: #fff;
@@ -2069,6 +2072,13 @@ button:focus {
 }
 .hasSide .sideBox ul li ul li a:hover::before,
 .hasSide .sideBox ul li ul li button:hover::before {
+  color: #d0a986;
+}
+.hasSide .sideBox ul li ul li.active a {
+  color: #d0a986;
+  background: none;
+}
+.hasSide .sideBox ul li ul li.active a::before {
   color: #d0a986;
 }
 .hasSide .content {
@@ -2261,7 +2271,7 @@ button:focus {
     display: none;
   }
 }
-.insidePages .pageMenu nav ul li:last-child::after {
+/* .insidePages .pageMenu nav ul li:last-child::after {
   content: '';
   position: absolute;
   right: 0;
@@ -2275,7 +2285,7 @@ button:focus {
   .insidePages .pageMenu nav ul li:last-child::after {
     display: none;
   }
-}
+} */
 .insidePages .pageMenu nav ul a {
   display: flex;
   align-items: center;

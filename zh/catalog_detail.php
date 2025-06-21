@@ -27,6 +27,7 @@
         <button class="next" title="下一頁"></button>
         <button class="zoomIn" title="放大"></button>
         <button class="zoomOut" title="縮小"></button>
+        <button class="reset" title="恢復"></button>
         <button class="listBtn" title="列表"></button>
       </div>
       <div class="pageNum">
@@ -67,8 +68,14 @@
       let initialWidth = document.querySelector('#holder img').clientWidth;
       let initialHeight = document.querySelector('#holder img').clientHeight;
       let mainTop = document.querySelector('.mainBox').offsetTop + 40;
+      let containerWidth = window.outerWidth;
 
       let aspectRatio = initialHeight / initialWidth;
+
+      let setWidthPC;
+      let setHeightPC;
+      let setWidthMobile;
+      let setHeightMobile;
 
 
       if (initialHeight > window.innerHeight) {
@@ -100,9 +107,9 @@
         mainTop = document.querySelector('.mainBox').offsetTop + 40;
 
 
-        if (window.innerWidth > 1024) {
+        if (window.outerWidth >= 1024) {
 
-          let containerWidth = window.innerWidth;
+          containerWidth = window.outerWidth;
           let newWidth = containerWidth / 2 - 40;
           let newHeight = newWidth * aspectRatio;
 
@@ -117,8 +124,13 @@
           $('#holder').turn('display', 'double');
           $('#holder').turn('size', newWidth, newHeight);
           $('#holder').turn('resize');
+
+          setWidthPC = newWidth;
+          setHeightPC = newHeight;
+
         } else {
-          let containerWidth = window.innerWidth;
+          let containerWidth = window.outerWidth;
+
           let newWidthS = containerWidth - 40;
           let newHeightS = newWidthS * aspectRatio;
 
@@ -131,13 +143,15 @@
             newWidthS = newWidthS;
           }
 
+          setWidthMobile = newWidthS;
+          setHeightMobile = newHeightS;
           $('#holder').turn('display', 'single');
           $('#holder').turn('size', newWidthS, newHeightS);
         }
         $('#holder').turn('resize');
       }
 
-      resizeFlipBook()
+      resizeFlipBook();
 
       $(window).on('resize', function() {
         resizeFlipBook()
@@ -154,21 +168,42 @@
       });
 
       $('.zoomIn').on('click', function() {
-        width = $('#holder').width() + 40;
-        height = width * aspectRatio;
+        if (window.outerWidth >= 1024) {
+          width = $('#holder').width() + 40;
+          height = width / 2 * aspectRatio;
+        } else {
+          width = $('#holder').width() + 40;
+          height = width * aspectRatio;
+        }
         $('#holder').turn('size', width, height);
       });
+
       $('.zoomOut').on('click', function() {
-        width = $('#holder').width() - 40;
-        height = width * aspectRatio;
+        if (window.outerWidth >= 1024) {
+          width = $('#holder').width() - 40;
+          height = width / 2 * aspectRatio;
+        } else {
+          width = $('#holder').width() - 40;
+          height = width * aspectRatio;
+        }
         $('#holder').turn('size', width, height);
       });
+
+      $('.reset').on('click', function() {
+
+        if (window.outerWidth >= 1024) {
+          $('#holder').turn('size', setWidthPC, setHeightPC);
+        } else {
+          $('#holder').turn('size', setWidthMobile, setHeightMobile);
+        }
+      });
+
       $('.nowPage input').on('change', function() {
         $('#holder').turn('page', $(this).val());
       });
 
       $('.listBtn').on('click', function() {
-        $('.listBox').addClass('active');
+        $('.listBox').toggleClass('active');
       });
 
       $('#listUse .pic').on('click', function() {
