@@ -51,12 +51,12 @@
   color: #1f1f1f;
   line-height: 1.6;
 }
-.contactPage .centerBox .content {
+.contactPage .content {
   background: #f4f4f4;
   padding: 7% 20px;
   margin-bottom: 10%;
 }
-.contactPage .centerBox .content .listBox {
+.contactPage .content .listBox {
   max-width: 960px;
   margin: 0 auto 60px;
   display: flex;
@@ -64,11 +64,11 @@
   gap: 20px;
 }
 @media screen and (max-width: 1024px) {
-  .contactPage .centerBox .content .listBox {
+  .contactPage .content .listBox {
     margin-bottom: 30px;
   }
 }
-.contactPage .centerBox .content .listBox .item {
+.contactPage .content .listBox .item {
   width: calc((100% - 20px * (3 - 1)) / 3);
   text-align: center;
   border: #d1cac3 1px solid;
@@ -80,17 +80,17 @@
   padding: 20px;
 }
 @media screen and (max-width: 767px) {
-  .contactPage .centerBox .content .listBox .item {
+  .contactPage .content .listBox .item {
     width: 100%;
     min-height: auto;
   }
 }
-.contactPage .centerBox .content .listBox .item .con {
+.contactPage .content .listBox .item .con {
   color: #1f1f1f;
   font-size: var(--clamp18);
   font-weight: 400;
 }
-.contactPage .centerBox .content .listBox .item .con span {
+.contactPage .content .listBox .item .con span {
   display: block;
   color: #d0a986;
   font-size: var(--clamp20);
@@ -98,7 +98,7 @@
   font-weight: 600;
   letter-spacing: 2px;
 }
-.contactPage .centerBox .content .notice {
+.contactPage .content .notice {
   color: #b20000;
   font-size: var(--clamp18);
   text-align: center;
