@@ -352,6 +352,7 @@
   justify-content: center;
   align-content: center;
   display: none;
+  z-index: 99;
 }
 .catalogOnlinePage .listBox.active {
   display: flex;
@@ -364,6 +365,21 @@
   gap: 10px;
 }
 .catalogOnlinePage #listUse .pic {
-  max-width: 200px;
   cursor: pointer;
 } /*# sourceMappingURL=catalog.css.map */
+
+.listBox .swiperBox {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listBox .swiper .swiper-slide {
+  width: fit-content;
+}
+.listBox .swiperBox .swiper-slide-active {
+  border: 5px solid #d0a986;
+}
+.listBox .swiper .pic img {
+  max-width: 300px;
+}

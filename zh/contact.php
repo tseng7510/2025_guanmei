@@ -111,17 +111,17 @@
                   </div>
                   <div class="content">
                     <div class="listBox">
-                      <div class="item">
+                      <div class="item wow fadeInUp" data-wow-delay="1.1s">
                         <div class="con">預約丈量約<span>1週</span></div>
                       </div>
-                      <div class="item">
+                      <div class="item wow fadeInUp" data-wow-delay="1.2s">
                         <div class="con">丈量完成至開始安裝約<span>1.5個月</span></div>
                       </div>
-                      <div class="item">
+                      <div class="item wow fadeInUp" data-wow-delay="1.3s">
                         <div class="con">安裝工期<span>依現場狀況及數量而定</span></div>
                       </div>
                     </div>
-                    <div class="notice">以上遇國定假日順延<br />
+                    <div class="notice wow fadeInUp" data-wow-delay="1.4s">以上遇國定假日順延<br />
                       視整體案量調整</div>
                   </div>
                 </div>

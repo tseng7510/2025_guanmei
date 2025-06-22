@@ -1477,7 +1477,8 @@ button:focus {
   .menuBox .nextMenuBox .nextMenuBox {
     background: #f4f4f4;
   }
-  .menuBox .nextMenuBox .nextMenuBox a:hover {
+  .menuBox .nextMenuBox .nextMenuBox li.active,
+  .menuBox .nextMenuBox .nextMenuBox li a:hover {
     color: #000;
     background: none;
   }

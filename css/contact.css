@@ -222,4 +222,40 @@
   left: 10px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-} /*# sourceMappingURL=contact.css.map */
+}
+
+.centerBox .pageTitleBox {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .centerBox .pageTitleBox {
+    margin-bottom: 20px;
+  }
+}
+.centerBox .pageTitleBox .title {
+  color: #1f1f1f;
+  font-weight: 400;
+  font-size: var(--clamp28);
+  position: relative;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+.centerBox .pageTitleBox .title + .description {
+  max-width: 1290px;
+  margin-top: 80px;
+  color: #999999;
+}
+@media screen and (max-width: 1024px) {
+  .centerBox .pageTitleBox .title + .description {
+    margin-top: 40px;
+  }
+}
+.centerBox .pageTitleBox .en {
+  color: #d0a986;
+  font-size: var(--clamp18);
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}

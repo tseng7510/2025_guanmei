@@ -51,9 +51,19 @@
                 <div class="pic"><img src="../images/in/catalog_2.jpg" alt="" /></div>
                 <div class="pic"><img src="../images/in/catalog_1.jpg" alt="" /></div>
                 <div class="pic"><img src="../images/in/catalog_2.jpg" alt="" /></div>
+                <div class="pic"><img src="../images/in/catalog_1.jpg" alt="" /></div>
+                <div class="pic"><img src="../images/in/catalog_2.jpg" alt="" /></div>
+                <div class="pic"><img src="../images/in/catalog_1.jpg" alt="" /></div>
+                <div class="pic"><img src="../images/in/catalog_2.jpg" alt="" /></div>
               </div>
             </div>
-            <div class="listBox"></div>
+            <div class="listBox">
+              <div class="swiperBox">
+                <div class="swiper">
+                  <div class="swiper-wrapper"> </div>
+                </div>
+              </div>
+            </div>
         </section>
       </div>
     </main>
@@ -61,9 +71,21 @@
   </div>
   <script type="text/javascript" src="../plugins/jquery-3.7.1.min.js"></script>
   <script src="../plugins/turn.js"></script>
+  <script type="text/javascript" src="../plugins/swiper-master/swiper-bundle.min.js"></script>
   <script type="text/javascript">
     $(window).on('load', function() {
-      $('.listBox').append($('#holder').clone().attr('id', 'listUse'));
+      $('#holder .pic').each(function() {
+        let imgSrc = $(this).find('img').attr('src');
+        $('.swiper-wrapper').append('<div class="swiper-slide"><div class="pic"><img src="' + imgSrc + '" alt=""></div></div>');
+      });
+
+
+      const listSwiper = new Swiper('.listBox .swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        slideToClickedSlide: true,
+        centeredSlides: true,
+      });
 
       let initialWidth = document.querySelector('#holder img').clientWidth;
       let initialHeight = document.querySelector('#holder img').clientHeight;
@@ -206,8 +228,10 @@
         $('.listBox').toggleClass('active');
       });
 
-      $('#listUse .pic').on('click', function() {
-        $('#holder').turn('page', $(this).index() + 1);
+      $('.swiper .pic').on('click', function() {
+        console.log('a');
+
+        $('#holder').turn('page', $(this).parents('.swiper-slide').index() + 1);
         $('.listBox').removeClass('active');
       });
     });
